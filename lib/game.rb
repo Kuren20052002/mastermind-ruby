@@ -88,6 +88,7 @@ class Game
       turn += 1
     end
 
+    turn -= 1 if result[:black] == 4
     announce_player_result(turn, answer)
   end
 
