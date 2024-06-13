@@ -72,7 +72,7 @@ class CPU < Player
   end
 
   def be_humble(turn)
-    puts "And there you have it!\nAnother code conquered in #{turn} turns, thanks to your clever code-creation skills and my unwavering determination."
+    puts "And there you have it!\nAnother code conquered in #{turn + 1} turns, thanks to your clever code-creation skills and my unwavering determination."
   end
 
   def be_motivated(answer)
