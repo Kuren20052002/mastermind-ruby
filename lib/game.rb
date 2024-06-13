@@ -75,7 +75,7 @@ class Game
 
   def make_player_guess(answer = generate_code) # rubocop:disable Metrics/MethodLength
     unless start_guessing == "yes"
-      puts "Okay, maybe next time! "
+      puts "Okay, maybe next time!"
       return
     end
 
@@ -88,7 +88,7 @@ class Game
       turn += 1
     end
 
-    turn -= 1 if result[:black] == 4
+    turn -= 1 if result[:black] == 4 && turn == 11
     announce_player_result(turn, answer)
   end
 
